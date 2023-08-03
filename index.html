@@ -15,11 +15,11 @@
             <h3 class="text-[#1E2125] text-4xl font-bold">Nai<span class="text-[#FD4520]">m</span>ur</h3>
             <div class="hidden lg:block">
                 <ul class="uppercase flex gap-8 ">
-                    <li><a class="hover:text-[#FD4520]" href="#home">Home</a></li>
-                    <li><a class="hover:text-[#FD4520]" href="">About Me</a></li>
-                    <li><a class="hover:text-[#FD4520]" href="">Portfolio</a></li>
-                    <li><a class="hover:text-[#FD4520]" href="">Resume</a></li>
-                    <li><a class="hover:text-[#FD4520]" href="">Contact</a></li>
+                    <li><a class="relative l-item " href="#home">Home</a></li>
+                    <li><a class="relative l-item " href="#about-section">About Me</a></li>
+                    <li><a class="relative l-item " href="">Portfolio</a></li>
+                    <li><a class="relative l-item " href="">Resume</a></li>
+                    <li><a class="relative l-item " href="">Contact</a></li>
                     <li><a class="text-[#FD4520] hover:text-white hover:bg-[#FD4520] p-4 msg-btn rounded-xl" href="https://www.facebook.com/messages/t/100081459700719">Messages Now</a></li>
                 </ul>
             </div>
@@ -34,7 +34,7 @@
                   <ul class="menu p-4 w-80 h-full flex gap-5 items-center bg-[#ECF0F3] text-3xl text-base-content">
                     <!-- Sidebar content here -->
                     <li><a class="hover:text-[#FD4520]" href="#home">Home</a></li>
-                    <li><a class="hover:text-[#FD4520]" href="">About Me</a></li>
+                    <li><a class="hover:text-[#FD4520]" href="#about-section">About Me</a></li>
                     <li><a class="hover:text-[#FD4520]" href="">Portfolio</a></li>
                     <li><a class="hover:text-[#FD4520]" href="">Resume</a></li>
                     <li><a class="hover:text-[#FD4520]" href="">Contact</a></li>
@@ -51,7 +51,15 @@
                 <div class="pt-10 space-y-5">
                     <h4 class="text-[#1e2125] font-medium">Connect with me</h4>
                     <div class="flex gap-5">
-                        <a href=""><img class="h-14 bg-slate-200 p-2 rounded-xl hover:bg-[rgb(248,106,78)]" src="./images/facebook.png" alt=""></a><a href=""><img class="h-14 bg-slate-200 p-2 rounded-xl hover:bg-[rgb(248,106,78)]" src="./images/messenger.png" alt=""></a><a href=""><img class="h-14 bg-slate-200 p-2 rounded-xl hover:bg-[rgb(248,106,78)]" src="./images/whatsapp.png" alt=""></a>
+                        <a href="https://www.facebook.com/mdnaimurrahman8606/">
+                            <img class="h-14 bg-slate-200 p-2 rounded-xl hover:bg-[rgb(248,106,78)] msg-btn" src="./images/facebook.png" alt="">
+                        </a>
+                        <a href="https://github.com/naimur8606">
+                            <img class="h-14 bg-slate-200 p-2 rounded-xl hover:bg-[rgb(248,106,78)] msg-btn" src="./images/github.png" alt="">
+                        </a>
+                        <a href="https://mdnaimurrahman8606@gmail.com/">
+                            <img class="h-14 bg-slate-200 p-2 rounded-xl hover:bg-[rgb(248,106,78)] msg-btn" src="./images/email.png" alt="">
+                        </a>
                     </div>
                 </div>
             </div>
@@ -59,5 +67,87 @@
         </div>
     </header>
 
+    <!-- main section -->
+
+    <main>
+        <!-- about section -->
+        <section id="about-section" class="w-11/12 mx-auto py-14 ">
+            <h3 class="text-[#3c3e41] text-center text-4xl font-bold ">About Me</h3>
+            <div class="flex justify-between h-[60vh] pt-10">
+                <div class="space-y-5 w-[48%]">
+                    <h2 class="text-[#3c3e41] text-5xl font-bold ">MD <span class="text-[#fd4520]">NAIMUR</span> RAHMAN</h2>
+                    <P class="text-[#3c3e41] text-base font-normal text-justify">
+                        As a front-end web developer, I craft visually stunning and user-friendly websites using HTML, CSS, and JavaScript. With a passion for design and an eye for detail, I am dedicated to delivering high-quality web solutions that captivate users and leave a lasting impression. Let's bring your digital vision to life together.
+                    </P>
+                    <button class="text-[#FD4520] border-[#FD4520] border-2 mt-10 hover:text-white hover:bg-[#FD4520] p-3 rounded-xl">Download CV</button>
+                </div>
+                <div class="w-[48%]">
+                    <div class="flex gap-14 mb-12">
+                        <p class="about-item relative active-link" onclick="openTab('skills')">Skills</p>
+                        <p class="about-item relative" onclick="openTab('experiences')">Experiences</p>
+                        <p class="about-item relative" onclick="openTab('education')">Education</p>
+                    </div>
+                    <div class="about-description active-description" id="skills">
+                        <ul class="space-y-3">
+                            <li>
+                                <span class="text-[#fd4520c5] font-bold">UI/UX</span><br>Designing websites / Redesigning websites
+                            </li>
+                            <li>
+                                <span class="text-[#fd4520c5] font-bold">Converting</span><br>Image to HTML, CSS / Figma to HTML, CSS
+                            </li>
+                            <li>
+                                <span class="text-[#fd4520c5] font-bold">Web development</span><br>Websites and app development
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="about-description" id="experiences">
+                        <ul class="space-y-3">
+                            <li>
+                                <span class="text-[#fd4520c5] font-bold">1 YEAR</span><br>From <a href="https://web.programming-hero.com/"><span class="text-blue-800">Programming Hero</span> & Web documentation</a>
+                            </li>
+                            <li>
+                                <span class="text-[#fd4520c5] font-bold">8 MONTHS</span><br>From <a href="https://web.programming-hero.com/"><span class="text-blue-800">Programming Hero</span> & Web documentation</a>
+                            </li>
+                            <li>
+                                <span class="text-[#fd4520c5] font-bold">1 YEAR</span><br>From <a href="https://web.programming-hero.com/"><span class="text-blue-800">Programming Hero</span> & Web documentation</a>
+                            </li>
+                            <li>
+                                <span class="text-[#fd4520c5] font-bold">Competitive Programming</span><br>Inter University Competitive Programming
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="about-description" id="education">
+                        <ul class="space-y-3">
+                            <li>
+                                <span class="text-[#fd4520c5] font-bold">SSC-2019</span><br>FromMuktagacha Govt. High School
+                            </li>
+                            <li>
+                                <span class="text-[#fd4520c5] font-bold">HSC-2021</span><br>From Govt. Shahid Smriti College
+                            </li>
+                            <li>
+                                <span class="text-[#fd4520c5] font-bold">BSC in CSE</span><br>Running student at Southeast University, Dhaka
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <script>
+        var aboutItem = document.getElementsByClassName("about-item");
+        var aboutDescription = document.getElementsByClassName("about-description");
+        function openTab(tabOpen){
+            for(aboutitem of aboutItem){
+                aboutitem.classList.remove("active-link");
+            }
+            for(aboutDscpt of aboutDescription){
+                aboutDscpt.classList.remove("active-description");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabOpen).classList.add("active-description");
+        }
+    </script>
 </body>
 </html>
