@@ -43,3 +43,17 @@ html{
 .about-description.active-description{
     display: block;
 }
+.service{
+    border-radius: 20px;
+    box-shadow: 3px 3px 15px #DBE2EB;
+    transition: background-color 0.5s,color 0.5s, transform 0.5s;
+}
+.service:hover{
+    background-color: #FD4520;
+    transform: translateY(-10px);
+    color: white;
+}
+.service:hover h2{
+    color: white;
+    transform: translateY(-1px);
+}
