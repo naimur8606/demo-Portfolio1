@@ -43,7 +43,7 @@ html{
 .about-description.active-description{
     display: block;
 }
-.service{
+.service,.work{
     border-radius: 20px;
     box-shadow: 3px 3px 15px #DBE2EB;
     transition: background-color 0.5s,color 0.5s, transform 0.5s;
@@ -56,4 +56,29 @@ html{
 .service:hover h2{
     color: white;
     transform: translateY(-1px);
+}
+.lear{
+    height: 0;
+    width: 100%;
+    background: linear-gradient(#fa9480b1,#fd4520);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    padding: 0 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transition: height 0.5s;
+}
+.work:hover .lear{
+    height: 100%;
+}
+.work > img{
+    transition: transform 0.5s;
+}
+.work:hover > img{
+    transform: scale(1.1);
 }
