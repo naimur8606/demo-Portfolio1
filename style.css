@@ -8,6 +8,13 @@
 html{
     scroll-behavior: smooth;
 }
+.btn-icons-hover{
+    transition: background-color 0.5s, transform 0.5s;
+}
+.btn-icons-hover:hover{
+    background-color: hsl(10,92%,64%);
+    transform: translateY(-5px);
+}
 .msg-btn{
     box-shadow: 1px 1px 10px rgb(210, 207, 207);
 }
