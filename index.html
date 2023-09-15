@@ -303,7 +303,7 @@
                     
                         <button type="submit" class="py-3 px-6 my-8 text-white text-xl rounded bg-[#fd4520]">Submit</button>
                     </form>
-                    <span class="text-red-700" id="msg"></span>
+                    <span class="text-green-500" id="msg"></span>
                 </div>
             </div>
         </section>
@@ -350,9 +350,12 @@
         From : "naimur2935@gmail.com",
         Subject : "This is the subject",
         Body : `Name: + ${name} <br/>Email: ${email} <br/>Subject: ${subject} <br/>Message: ${message}` 
-    }).then(
-    message => document.getElementById("msg").innerText="Message sent"
-);
+    }).then(response => {
+                document.getElementById("msg").innerText="Message sent ";
+                setTimeout(function(){
+                    msg.innerHTML="";
+                },5000)
+            })
     }
 </script>    
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
